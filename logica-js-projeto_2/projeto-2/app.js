@@ -19,7 +19,8 @@ exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
 
 //função sem parâmetro 
 function verificarChute() {
-    console.log(numeroSecreto);
+    let chute = document.querySelector('input').value;
+    console.log(chute == numeroSecreto);
 }
 
 //função sem parâmetro e com retorno
