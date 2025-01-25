@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo Taxa de Entrega</title>
+</head>
+<body>
+    <h1>Farmácia Rivotril</h1>
+    <script>
+        const bairro = prompt("Bairro de entrega: ");
+        let taxaEntrega
+        switch (bairro) {
+            case "Centro":
+                taxaEntrega = 5.00;
+                break;
+            case "Castelo":
+            case "Ouropreto":
+                taxaEntrega = 7.00;
+                break;
+            case "Santa Maria":
+                taxaEntrega = 8.00;
+        }
+        alert(`Taxa R$: ${taxaEntrega.toFixed(2)}`)
+
+
+    </script>
+</body>
+</html>
