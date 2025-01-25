@@ -3,18 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Exemplo 4.2</title>
+    <link rel="stylesheet" href="estilo-css/estilo.css">
 </head>
 <body>
-    <h1>Programa Olá Você!</h1>
+    <img src="img/balanca.png" alt="Balança de Peso">
+    <h1>Programa Cálculo do Peso Ideal</h1>
     <form>
-        <p> Nome: 
-            <input type="text" id="inNome">
-            <input type="submit" value="Mostrar">       
+        <p>Nome:
+            <input type="text" id="inNome" required>
         </p>
+        <p>Sexo:
+            <input type="radio" name="sexo" id="inMasculino" required> inMasculino
+            <input type="radio" name="sexo" id="inFeminino" required> Feminino
+        </p>
+        <p>Altura:
+            <input type="number" min="0" step="0.01" id="inAltura" required>
+        </p>
+        <input type="submit" value="Calcular Peso Ideal">
+        <input type="reset" value="Limpar Campos">
     </form>
     <h3></h3>
-    <script src="index.js"></script>
-    
+    <script src="js/index.js"></script>
+    <script src="js/interação-botoes.js"></script>
 </body>
 </html>
