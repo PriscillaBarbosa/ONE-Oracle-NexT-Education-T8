@@ -1,5 +1,5 @@
-const frm = document.querySelector("form") //obtém elementos da página
-const resp = document.querySelector("pre")
+const frm = document.querySelector("form"); //obtém elementos da página
+const resp = document.querySelector("pre");
 
 frm.addEventListener("submit", (e) => {    //escuta evento submit do form
     e.preventDefault()     //evita envio do form
